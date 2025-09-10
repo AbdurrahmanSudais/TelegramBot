@@ -1,1 +1,9 @@
+[build]
+builder = "dockerfile"
 
+[deploy]
+startCommand = "python bot.py"
+restartPolicyType = "always"
+
+[[services]]
+name = "telegram-group-bot"
